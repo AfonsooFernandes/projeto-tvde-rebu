@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoiiapp.AvaliarCondutorController">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="rebuTitle" layoutX="51.0" layoutY="6.0" style="-fx-font-weight: BOLD;" text="REBU">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="cartoon" fitHeight="249.0" fitWidth="287.0" layoutX="149.0" layoutY="119.0" opacity="0.07" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagens/cartoon.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="113.0" layoutY="87.0" prefHeight="263.0" prefWidth="356.0" style="-fx-background-color: CLEAR; -fx-border-color: BLACK;">
+         <children>
+            <Label layoutX="29.0" layoutY="8.0" prefHeight="27.0" prefWidth="356.0" text="VIAGEM FINALIZADA COM SUCESSO!" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="52.0" text="Como correu a sua viagem?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomeCondutorField" layoutX="38.0" layoutY="86.0" text="nome condutor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="avaliacaoComboBox" layoutX="141.0" layoutY="83.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="302.0" layoutY="82.0">
+               <image>
+                  <Image url="@../../../imagens/786331.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="avaliarButton"  layoutX="124.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#setAvaliarCondutor" style="-fx-border-color: black; -fx-background-color: white;" text="Avaliar Condutor" />
+            <Button fx:id="naoAvaliarButton" layoutX="145.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#setNaoAvaliarButton" prefHeight="17.0" prefWidth="66.0" style="-fx-background-color: white; -fx-border-color: black;" text="Não Avaliar">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="132.0" text="Comentários:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="comentariosField" layoutX="142.0" layoutY="130.0" prefHeight="50.0" prefWidth="184.0" style="-fx-border-color: black;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

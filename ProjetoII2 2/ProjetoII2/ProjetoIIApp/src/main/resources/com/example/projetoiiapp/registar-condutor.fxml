@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoiiapp.RegistarCondutorController">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="181.0" layoutY="16.0" text="Registo de Condutor">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button id="homeButton" fx:id="homeButton" layoutX="25.0" layoutY="-11.0" mnemonicParsing="false" onMouseClicked="#setHomeButtonClick" style="-fx-background-color: CLEAR; -fx-font-weight: BOLD;" text="REBU">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button id="voltarButton" fx:id="voltarButton" layoutX="54.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#BackButton" style="-fx-background-color: clear; -fx-border-color: black;" text="Voltar" />
+      <Label layoutX="54.0" layoutY="105.0" style="-fx-font-weight: bold;" text="Nome:" />
+      <TextField id="nomeField" fx:id="nomeField" layoutX="104.0" layoutY="101.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label layoutX="54.0" layoutY="134.0" style="-fx-font-weight: bold;" text="Data de Nascimento:" />
+      <DatePicker id="dataNascimentoPicker" fx:id="dataNascPicker" layoutX="175.0" layoutY="130.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="54.0" layoutY="162.0" style="-fx-font-weight: bold;" text="Género:" />
+      <ComboBox id="generoComboBox" fx:id="generoComboBox" layoutX="104.0" layoutY="158.0" prefHeight="25.0" prefWidth="266.0" />
+      <Label layoutX="55.0" layoutY="192.0" prefHeight="17.0" prefWidth="87.0" style="-fx-font-weight: bold;" text="Nacionalidade:" />
+      <ComboBox id="nacionalidadeComboBox" fx:id="nacionalidadeComboBox" layoutX="143.0" layoutY="186.0" prefHeight="27.0" prefWidth="227.0" />
+      <Label layoutX="57.0" layoutY="220.0" prefHeight="17.0" prefWidth="132.0" style="-fx-font-weight: bold;" text="Nº Cartão de Cidadão:" />
+      <TextField id="nccFiled" fx:id="nCartaoCidadaoField" layoutX="193.0" layoutY="216.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="57.0" layoutY="250.0" prefHeight="17.0" prefWidth="132.0" style="-fx-font-weight: bold;" text="Nº Carta de Condução:" />
+      <TextField id="nCartaConducaoField" fx:id="nCartaConducaoField" layoutX="193.0" layoutY="246.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="57.0" layoutY="282.0" prefHeight="17.0" prefWidth="132.0" style="-fx-font-weight: bold;" text="Nº Cerificado TVDE:" />
+      <Label layoutX="57.0" layoutY="312.0" prefHeight="17.0" prefWidth="132.0" style="-fx-font-weight: bold;" text="Palavra Passe:" />
+      <TextField id="nCertificadoField" fx:id="nCertificadoField" layoutX="175.0" layoutY="278.0" prefHeight="25.0" prefWidth="194.0" />
+      <Button id="registarButton" layoutX="478.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#RegistarCondutor" style="-fx-background-color: clear; -fx-border-color: black;" text="Registar" />
+      <PasswordField fx:id="passwordField" layoutX="142.0" layoutY="308.0" prefHeight="25.0" prefWidth="227.0" />
+   </children>
+</AnchorPane>

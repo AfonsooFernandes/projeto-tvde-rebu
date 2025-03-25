@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="491.0" prefWidth="909.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoiiapp.ViagensDisponiveisController">
+   <children>
+      <TableView fx:id="tableView" layoutX="58.0" layoutY="148.0" prefHeight="255.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="nomeColumn" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="generoColumn" prefWidth="75.0" text="Género" />
+            <TableColumn fx:id="nacionalidadeColumn" prefWidth="97.0" text="Nacionalidade" />
+            <TableColumn fx:id="idadeColumn" prefWidth="75.0" text="Idade" />
+            <TableColumn fx:id="avaliacaoColumn" prefWidth="75.0" text="Avaliação" />
+            <TableColumn fx:id="origemColumn" prefWidth="75.0" text="Origem" />
+            <TableColumn fx:id="destinoColumn" prefWidth="75.0" text="Destino" />
+            <TableColumn fx:id="distanciaColumn" prefWidth="75.0" text="Distância" />
+            <TableColumn fx:id="tipoVeiculoColumn" prefWidth="106.0" text="Tipo de Veículo" />
+            <TableColumn fx:id="lucroColumn" prefWidth="65.0" text="Lucro" />
+        </columns>
+      </TableView>
+      <Button fx:id="aceitarButton" onMouseClicked="#aceitar" layoutX="421.0" layoutY="435.0" mnemonicParsing="false" style="-fx-background-color: clear; -fx-border-color: black;" text="Aceitar" />
+      <AnchorPane layoutX="85.0" prefHeight="64.0" prefWidth="740.0">
+         <children>
+            <Label fx:id="rebuTitle" layoutX="51.0" layoutY="6.0" style="-fx-font-weight: BOLD;" text="REBU">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="historicoButton" onMouseClicked="#setHistoricoButtonClick" layoutX="423.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: CLEAR; -fx-border-color: black;" text="Histórico" />
+            <Button fx:id="ajudaButton" onMouseClicked="#setAjudaButton" layoutX="534.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: CLEAR; -fx-border-color: black;" text="Ajuda" />
+            <ImageView fx:id="menuUser" accessibleRole="MENU" fitHeight="33.0" fitWidth="30.0" layoutX="619.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/Sample_User_Icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="registarVeiculoButton" layoutX="281.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#registarVeiculo" style="-fx-background-color: clear; -fx-border-color: black;" text="Registar Veículo" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="voltarButton" onMouseClicked="#BackButton" layoutX="139.0" layoutY="72.0" mnemonicParsing="false" style="-fx-background-color: clear; -fx-border-color: black;" text="Voltar" />
+   </children>
+</AnchorPane>

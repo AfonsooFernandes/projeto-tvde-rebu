@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="663.0" prefWidth="1484.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoiiapp.FeedbacksViagens">
+   <children>
+      <AnchorPane layoutX="178.0" prefHeight="64.0" prefWidth="1209.0">
+         <children>
+            <Label fx:id="rebuTitle" layoutX="51.0" layoutY="6.0" style="-fx-font-weight: BOLD;" text="REBU">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="958.0" layoutY="16.0">
+               <image>
+                  <Image url="@../../../imagens/Sample_User_Icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="gerirStaffButton" layoutX="774.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#setGerirStaffButton" style="-fx-background-color: CLEAR; -fx-border-color: black;" text="Gerir Staff" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="228.0" layoutY="117.0" prefHeight="25.0" prefWidth="261.0" text="Pesquisar por Data:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="pesquisarButton" layoutX="455.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#pesquisar" style="-fx-background-color: clear; -fx-border-color: black;" text="Pesquisar" />
+      <Button fx:id="voltarButton" layoutX="228.0" layoutY="72.0" mnemonicParsing="false" onMouseClicked="#BackButton" style="-fx-background-color: clear; -fx-border-color: black;" text="Voltar" />
+      <DatePicker fx:id="datePickerInicio" layoutX="228.0" layoutY="172.0" />
+      <DatePicker fx:id="datePickerFim" layoutX="228.0" layoutY="223.0" />
+      <Label layoutX="231.0" layoutY="207.0" text="Data Final da Pesquisa:" />
+      <Label layoutX="228.0" layoutY="155.0" text="Data inicial da Pesquisa:" />
+      <Button fx:id="reporPesquisaButton" layoutX="559.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#preencherTabela" style="-fx-background-color: clear; -fx-border-color: black;" text="Repor Pesquisa" />
+      <TableView fx:id="tableView" layoutX="215.0" layoutY="310.0" prefHeight="324.0" prefWidth="909.0">
+        <columns>
+          <TableColumn fx:id="condutorColumn" prefWidth="75.0" text="Condutor" />
+          <TableColumn fx:id="passageiroColumn" prefWidth="75.0" text="Passageiro" />
+            <TableColumn fx:id="avaliacaoDoCondutorColumn" prefWidth="142.0" text="Avaliação do Condutor" />
+            <TableColumn fx:id="avaliacaoDoPassageiroColumn" prefWidth="149.0" text="Avaliação do Passageiro" />
+            <TableColumn fx:id="comentarioDoCondutorColumn" prefWidth="155.0" text="Comentário do Condutor" />
+            <TableColumn fx:id="comentarioDoPassageiroColumn" prefWidth="162.0" text="Comentário do Passageiro" />
+            <TableColumn fx:id="dataInicioColumn" prefWidth="75.0" text="Data Inicio" />
+            <TableColumn fx:id="dataFimColumn" prefWidth="75.0" text="Data Fim" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ProjetoII:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProjetoII_jar</output-path>
+    <root id="archive" name="ProjetoII.jar">
+      <element id="module-output" name="ProjetoII" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.10/antlr4-runtime-4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.0.2.Final/hibernate-core-6.0.2.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17/javafx-fxml-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17/javafx-base-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17/javafx-graphics-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17/javafx-controls-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/6.0.1.Final/hibernate-commons-annotations-6.0.1.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17/javafx-fxml-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17/javafx-controls-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17/javafx-graphics-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17/javafx-base-17.jar" path-in-jar="/" />
+      <element id="jpa-descriptors" facet="ProjetoII/jpa/JPA" />
+      <element id="library" level="project" name="Maven: org.jboss:jandex:2.4.2.Final" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:17" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:17" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:17" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:17" />
+      <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.12.9" />
+      <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:3.0.2" />
+      <element id="library" level="project" name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:17" />
+      <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-core:3.0.2" />
+      <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.3.Final" />
+      <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:6.0.1.Final" />
+      <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:3.0.2" />
+      <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.0.2.Final" />
+      <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.5.1" />
+      <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:3.0.0" />
+      <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:2.0.1" />
+      <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.10" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:17" />
+      <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.0" />
+      <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.1" />
+      <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:17" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:17" />
+    </root>
+  </artifact>
+</component>

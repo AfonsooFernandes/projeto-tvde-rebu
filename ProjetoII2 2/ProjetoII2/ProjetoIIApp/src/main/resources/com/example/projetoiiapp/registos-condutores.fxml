@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="663.0" prefWidth="871.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetoiiapp.RegistosCondutoresController">
+   <children>
+      <AnchorPane layoutX="135.0" prefHeight="58.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="rebuTitle" layoutX="51.0" layoutY="6.0" style="-fx-font-weight: BOLD;" text="REBU">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="registosVeiculosButton" onMouseClicked="#registosVeiculos" layoutX="377.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: CLEAR; -fx-border-color: black;" text="Registos de Veículos" />
+               <ImageView fitHeight="33.0" fitWidth="30.0" layoutX="525.0" layoutY="19.0">
+                   <image>
+                       <Image url="@../../../imagens/Sample_User_Icon.png" />
+                   </image>
+               </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="16.0" layoutY="214.0" prefHeight="295.0" prefWidth="838.0">
+        <columns>
+          <TableColumn fx:id="nomeColumn" prefWidth="121.0" text="Nome" />
+          <TableColumn fx:id="generoColumn" minWidth="5.0" prefWidth="70.0" text="Género" />
+            <TableColumn fx:id="nacionalidadeColumn" prefWidth="96.0" text="Nacionalidade" />
+            <TableColumn fx:id="idadeColumn" prefWidth="71.0" text="Idade" />
+            <TableColumn fx:id="nCertificadoTVDEColumn" prefWidth="122.0" text="Nº Certificado TVDE" />
+            <TableColumn fx:id="nCartaoCidadaoColumn" prefWidth="130.0" text="Nº Cartão Cidadão" />
+            <TableColumn fx:id="nCartaConducaoColumn" prefWidth="129.0" text="Nº Carta Condução" />
+            <TableColumn fx:id="estadoPedidoColumn" prefWidth="103.0" text="Estado Pedido" />
+        </columns>
+      </TableView>
+      <Label layoutX="187.0" layoutY="113.0" prefHeight="25.0" prefWidth="261.0" text="Pesquisar por Nº Cartão de Cidadão:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pesquisarField" layoutX="187.0" layoutY="138.0" prefHeight="25.0" prefWidth="261.0" />
+      <Button fx:id="pesquisarButton" layoutX="461.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#pesquisarButton" style="-fx-background-color: clear; -fx-border-color: black;" text="Pesquisar" />
+      <Button fx:id="voltarButton" layoutX="187.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#BackButton" style="-fx-background-color: clear; -fx-border-color: black;" text="Voltar" />
+      <ComboBox fx:id="novoEstadoComboBox" layoutX="200.0" layoutY="578.0" prefHeight="27.0" prefWidth="183.0" style="-fx-background-color: clear; -fx-border-color: black;" />
+      <Label layoutX="200.0" layoutY="553.0" text="Novo Estado:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="atualizarButton" layoutX="396.0" layoutY="579.0" mnemonicParsing="false" onMouseClicked="#atualizarEstado" style="-fx-background-color: clear; -fx-border-color: black;" text="Atualizar" />
+      <Button fx:id="reporPesquisaButton" layoutX="558.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#preencher" style="-fx-background-color: clear; -fx-border-color: black;" text="Repor Pesquisa" />
+   </children>
+</AnchorPane>
